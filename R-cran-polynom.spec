@@ -4,7 +4,7 @@ Summary:	A collection of functions to implement a class for univariate polynomia
 Summary(pl):	Kolekcja funkcji do implementacji klas do uniwersalnych manipulacji na wielomianach
 Name:		R-cran-%{modulename}
 Version:	1.1r15
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
