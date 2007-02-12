@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	polynom
 Summary:	A collection of functions to implement a class for univariate polynomial manipulations
-Summary(pl.UTF-8):   Kolekcja funkcji do implementacji klas do operacji na wielomianach jednowymiarowych
+Summary(pl.UTF-8):	Kolekcja funkcji do implementacji klas do operacji na wielomianach jednowymiarowych
 Name:		R-cran-%{modulename}
 Version:	1.1r15
 Release:	2
