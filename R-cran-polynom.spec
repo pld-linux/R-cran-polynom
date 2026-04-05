@@ -1,14 +1,15 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	polynom
+%undefine	_debugsource_packages
 Summary:	A collection of functions to implement a class for univariate polynomial manipulations
 Summary(pl.UTF-8):	Kolekcja funkcji do implementacji klas do operacji na wielomianach jednowymiarowych
 Name:		R-cran-%{modulename}
-Version:	1.3r7
-Release:	3
+Version:	1.4r1
+Release:	1
 License:	GPL
 Group:		Applications/Math
-Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
-# Source0-md5:	51f74356b6a9a5b00df2f12d0c6e9d85
+Source0:	https://cran.r-project.org/src/contrib/%{modulename}_%{fversion}.tar.gz
+# Source0-md5:	5511178c91fd6eb33fdeefc64deb0546
 BuildRequires:	R >= 2.8.1
 Requires(post,postun):	R >= 2.8.1
 Requires(post,postun):	perl-base
@@ -27,7 +28,7 @@ jednowymiarowych.
 %setup -q -c
 
 %build
-R CMD build %{modulename}
+R CMD build --no-build-vignettes %{modulename}
 
 %install
 rm -rf $RPM_BUILD_ROOT
